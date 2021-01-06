@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="FDL_QA_DB_Con" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="extra_info" prompt="extra_info?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="talend.idc.dev@ge.com" name="mail_from" prompt="mail_from?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend.idc.dev@ge.com"/>
+    <contextParameter comment="sodetectdevteam@ge.com" name="mail_to" prompt="mail_to?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sodetectdevteam@ge.com"/>
+    <contextParameter comment="C:/Users/786679/Documents/Talend_Workspace/logfile_" name="Filepathname" prompt="Filepathname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Users/786679/Documents/Talend_Workspace/logfile_"/>
+    <contextParameter comment="" name="SOD_QA_RPT_GP_Server" prompt="SOD_QA_RPT_GP_Server?" promptNeeded="false" repositoryContextId="_T-JbMMuvEeiNU9pTQwRDwQ" type="id_String" value="fdlqa-gp-cloud.corporate.ge.com"/>
+    <contextParameter comment="" name="SOD_QA_RPT_GP_Schema" prompt="SOD_QA_RPT_GP_Schema?" promptNeeded="false" repositoryContextId="_T-JbMMuvEeiNU9pTQwRDwQ" type="id_String" value="gf_sod_rpt"/>
+    <contextParameter comment="" name="SOD_QA_RPT_GP_Login" prompt="SOD_QA_RPT_GP_Login?" promptNeeded="false" repositoryContextId="_T-JbMMuvEeiNU9pTQwRDwQ" type="id_String" value="502784477"/>
+    <contextParameter comment="" name="SOD_QA_RPT_GP_Database" prompt="SOD_QA_RPT_GP_Database?" promptNeeded="false" repositoryContextId="_T-JbMMuvEeiNU9pTQwRDwQ" type="id_String" value="finance?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory"/>
+    <contextParameter comment="" name="SOD_QA_RPT_GP_Password" prompt="SOD_QA_RPT_GP_Password?" promptNeeded="false" repositoryContextId="_T-JbMMuvEeiNU9pTQwRDwQ" type="id_Password" value="enc:system.encryption.key.v1:SG9p62RWElY8voFmig7rTA8+7gyqItousRsLh3fUI84CNiy/2k+T+bY="/>
+    <contextParameter comment="" name="SOD_QA_RPT_GP_Port" prompt="SOD_QA_RPT_GP_Port?" promptNeeded="false" repositoryContextId="_T-JbMMuvEeiNU9pTQwRDwQ" type="id_String" value="5432"/>
+  </context>
+  <context confirmationNeeded="false" name="FDL_QA_DB_Con">
+    <contextParameter comment="" name="extra_info" prompt="extra_info?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="talend.idc.dev@ge.com" name="mail_from" prompt="mail_from?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend.idc.dev@ge.com"/>
+    <contextParameter comment="sodetectdevteam@ge.com" name="mail_to" prompt="mail_to?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sodetectdevteam@ge.com"/>
+    <contextParameter comment="C:/Users/786679/Documents/Talend_Workspace/logfile_" name="Filepathname" prompt="Filepathname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Users/786679/Documents/Talend_Workspace/logfile_"/>
+    <contextParameter comment="" name="SOD_QA_RPT_GP_Server" prompt="SOD_QA_RPT_GP_Server?" promptNeeded="false" repositoryContextId="_T-JbMMuvEeiNU9pTQwRDwQ" type="id_String" value="fdlqa-gp-cloud.corporate.ge.com"/>
+    <contextParameter comment="" name="SOD_QA_RPT_GP_Schema" prompt="SOD_QA_RPT_GP_Schema?" promptNeeded="false" repositoryContextId="_T-JbMMuvEeiNU9pTQwRDwQ" type="id_String" value="gf_sod_rpt"/>
+    <contextParameter comment="" name="SOD_QA_RPT_GP_Login" prompt="SOD_QA_RPT_GP_Login?" promptNeeded="false" repositoryContextId="_T-JbMMuvEeiNU9pTQwRDwQ" type="id_String" value="502784477"/>
+    <contextParameter comment="" name="SOD_QA_RPT_GP_Database" prompt="SOD_QA_RPT_GP_Database?" promptNeeded="false" repositoryContextId="_T-JbMMuvEeiNU9pTQwRDwQ" type="id_String" value="finance?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory"/>
+    <contextParameter comment="" name="SOD_QA_RPT_GP_Password" prompt="SOD_QA_RPT_GP_Password?" promptNeeded="false" repositoryContextId="_T-JbMMuvEeiNU9pTQwRDwQ" type="id_Password" value="enc:system.encryption.key.v1:Z344839/JL2YRVAsD3fMhnxt7uaeNrVww3LTLjcFYwzN6tbcSeeoqXo="/>
+    <contextParameter comment="" name="SOD_QA_RPT_GP_Port" prompt="SOD_QA_RPT_GP_Port?" promptNeeded="false" repositoryContextId="_T-JbMMuvEeiNU9pTQwRDwQ" type="id_String" value="5432"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms512M&quot;,&quot;-Xmx512M&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="928"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/Users/386095/Documents/Talend_Wrkspace/in.csv&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:DF4teOFnH7Wva0PomRU8wyHLVwzYniA6VA4NV/yK"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/386095/Documents/Talend_Wrkspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:eKkHO2xUoEBu2Tz8gXgrSxFEXXpzplLx/0Co/ctV"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_0wmXQFHiEeiLOYXqWmXucA" name="DQTechnical"/>
+    <routinesParameter id="_0vx34FHiEeiLOYXqWmXucA" name="DataMasking"/>
+    <routinesParameter id="_0ki4QFHiEeiLOYXqWmXucA" name="DataOperation"/>
+    <routinesParameter id="_0wPx8FHiEeiLOYXqWmXucA" name="DataQualityDependencies"/>
+    <routinesParameter id="_0wDksFHiEeiLOYXqWmXucA" name="DataQuality"/>
+    <routinesParameter id="_0waxEFHiEeiLOYXqWmXucA" name="DqStringHandling"/>
+    <routinesParameter id="_0s90cFHiEeiLOYXqWmXucA" name="Mathematical"/>
+    <routinesParameter id="_0tgnAFHiEeiLOYXqWmXucA" name="Numeric"/>
+    <routinesParameter id="_0t5BgFHiEeiLOYXqWmXucA" name="Relational"/>
+    <routinesParameter id="_0xDqQFHiEeiLOYXqWmXucA" name="SQLike"/>
+    <routinesParameter id="_0uKuUFHiEeiLOYXqWmXucA" name="StringHandling"/>
+    <routinesParameter id="_0ullEFHiEeiLOYXqWmXucA" name="TalendDataGenerator"/>
+    <routinesParameter id="_0vFUUFHiEeiLOYXqWmXucA" name="TalendDate"/>
+    <routinesParameter id="_0vbSkFHiEeiLOYXqWmXucA" name="TalendString"/>
+    <routinesParameter id="_SiyO8BIGEeu0AuRkoxUUWA" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-256" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_5"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_H9PeIFKaEeiIQNmrcJvqpQ"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.SOD_QA_RPT_GP_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.SOD_QA_RPT_GP_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.SOD_QA_RPT_GP_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.SOD_QA_RPT_GP_Schema"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.SOD_QA_RPT_GP_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:SmRvtFQReoZI398K6nkBCmUDyGIUBE/5kaAACp8grc2OxrTUe32CQlk++y0ot8fy76BicQIKa9wK5Q=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;t_source_system_count_details&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;Delete from gf_sod_rpt.t_sod_metrix_trends_details where Processed_date = current_date;&#13;&#10;&#13;&#10;Insert into gf_sod_rpt.t_sod_metrix_trends_details&#13;&#10;Select current_date as Processed_date, defect_type as Defect_type, inn1.source_system_cd as source_system_name, count( defect_id) as defect_count , count(distinct user_id) as User_count, NULL as Responsibility_count, null as Role_Pair_Violation_count &#13;&#10;from gf_sod_rpt.sod_app_defect inn1&#13;&#10;group by defect_type,inn1.source_system_cd order by 3&#13;&#10;;commit;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="Insert counts in metrix_trends_details"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_5"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="Email_Notifications" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="64" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Email_Notifications_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="Email_Notifications"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tGreenplumCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumCommit_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_2"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumCommit_1"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-896" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-736" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_H9PeIFKaEeiIQNmrcJvqpQ"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SOD_QA_RPT_GP_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SOD_QA_RPT_GP_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SOD_QA_RPT_GP_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.SOD_QA_RPT_GP_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.SOD_QA_RPT_GP_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mp6IEvzSeGu5yr6vbQQNczLrJtL6yzkIJa90eorKvdhI31EDkBn6wjvfq90ugIU6vGNsiXdshKiCXw=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_H9PeIFKaEeiIQNmrcJvqpQ"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.SOD_QA_RPT_GP_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.SOD_QA_RPT_GP_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.SOD_QA_RPT_GP_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.SOD_QA_RPT_GP_Schema"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.SOD_QA_RPT_GP_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:pj572ubNaInUhfHSm1YtfJnlP991OF3JrPeFYYpBVmH44PqAR1LL9DvlSRwupPjd9rc3mcHHXDj2EA=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;t_source_system_count_details&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;update gf_sod_rpt.t_sod_metrix_trends_details inn1&#13;&#10;Set Responsibility_count = inn2.resp_cnt&#13;&#10;from (select count(distinct new_resp_id) resp_cnt ,source_system_cd from gf_sod_rpt.sod_app_defect&#13;&#10; group by source_system_cd ,defect_type having defect_type = 'Defective Role' ) inn2&#13;&#10;Where inn1.source_system_name = inn2.source_System_cd and inn1.Processed_date = current_date and defect_type = 'Defective Role';&#13;&#10;commit;&#13;&#10;&#13;&#10;update gf_sod_rpt.t_sod_metrix_trends_details inn1&#13;&#10;Set role_pair_violation_count = inn2.rol_pair_cnt&#13;&#10;from (select count(distinct new_resp_id) rol_pair_cnt ,source_system_cd from gf_sod_rpt.sod_app_defect group by source_system_cd ,defect_type having defect_type = 'Conflicting Roles') inn2&#13;&#10;Where inn1.source_system_name = inn2.source_System_cd and inn1.Processed_date = current_date and defect_type = 'Conflicting Roles';&#13;&#10;commit;&#13;&#10;&#13;&#10;update gf_sod_rpt.t_sod_metrix_trends_details inn1&#13;&#10;Set total_user_count = inn2.User_count&#13;&#10;from (Select source_system_cd, count(distinct user_id) as User_count from gf_sod_rpt.sod_app_defect inn1&#13;&#10;group by inn1.source_system_cd) inn2&#13;&#10;Where inn1.source_system_name = inn2.source_System_cd and inn1.Processed_date = current_date and defect_type = 'Defective Role';&#13;&#10;&#13;&#10;update gf_sod_rpt.t_sod_metrix_trends_details inn1&#13;&#10;Set tot_usr_cnt = inn2.usr_cnt&#13;&#10;from (Select source_system_name, count(distinct user_id) usr_cnt from gf_sod_rpt.sod_user_resp_mapping_lnd &#13;&#10;group by source_system_name) inn2&#13;&#10;Where inn1.source_system_name = inn2.source_system_name and inn1.Processed_date = current_date;&#13;&#10;&#13;&#10;update gf_sod_rpt.t_sod_metrix_trends_details inn1&#13;&#10;Set tot_resp_cnt = inn2.resp_cnt&#13;&#10;from (Select source_system_cd, count(distinct responsibility_id) resp_cnt from gf_sod_rpt.sod_resp_fun_mapping_lnd&#13;&#10;group by source_system_cd) inn2&#13;&#10;Where inn1.source_system_name = inn2.source_System_cd and inn1.Processed_date = current_date;&#13;&#10;&#13;&#10;commit;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update count for responsibility and rolepair violation"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGreenplumRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-512" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_H9PeIFKaEeiIQNmrcJvqpQ"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tGreenplumConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.SOD_QA_RPT_GP_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.SOD_QA_RPT_GP_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.SOD_QA_RPT_GP_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.SOD_QA_RPT_GP_Schema"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="GREENPLUM"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.SOD_QA_RPT_GP_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:X0JhxgRhm2+3bK63eusjQEz+ThFnK2FT2wmH4YNzReT+RuuFSYf/A6sRLtaSpLIdp7XdcDE+qCPhOQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;t_source_system_count_details&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;truncate table gf_sod_rpt.t_source_system_count_details;&#13;&#10;insert into gf_sod_rpt.t_source_system_count_details&#13;&#10;select source_system_name,table_name,counts,xx_hvr_last_upd_tms,sod_processed_date,  timezone('America/New_York',timezone('UTC',xx_hvr_last_upd_tms)) as xx_hvr_last_upd_tms_est  from (&#13;&#10;select distinct source_system_name,'xx_fnd_descriptive_flexs' as table_name,count(1) as counts,max(xx_hvr_last_upd_tms) xx_hvr_last_upd_tms, current_date as sod_processed_date from analytics_view.xx_fnd_descriptive_flexs_v &#13;&#10;group by source_system_name,table_name&#13;&#10;union&#13;&#10;select distinct source_system_name,'xx_fnd_form_functions' as table_name,count(1) as counts,max(xx_hvr_last_upd_tms) xx_hvr_last_upd_tms, current_date as sod_processed_date from analytics_view.xx_fnd_form_functions_v&#13;&#10;group by source_system_name,table_name&#13;&#10;union&#13;&#10;select distinct source_system_name,'xx_fnd_menu_entries' as table_name,count(1) as counts,max(xx_hvr_last_upd_tms) xx_hvr_last_upd_tms, current_date as sod_processed_date from analytics_view.xx_fnd_menu_entries_v&#13;&#10;group by source_system_name,table_name&#13;&#10;union&#13;&#10;select distinct source_system_name,'xx_fnd_menus' as table_name,count(1) as counts,max(xx_hvr_last_upd_tms) xx_hvr_last_upd_tms, current_date as sod_processed_date from analytics_view.xx_fnd_menus_v&#13;&#10;group by source_system_name,table_name&#13;&#10;union&#13;&#10;select distinct source_system_name,'xx_fnd_resp_functions' as table_name,count(1) as counts,max(xx_hvr_last_upd_tms) xx_hvr_last_upd_tms, current_date as sod_processed_date from analytics_view.xx_fnd_resp_functions_v&#13;&#10;group by source_system_name,table_name&#13;&#10;union&#13;&#10;select distinct source_system_name,'xx_fnd_responsibility' as table_name,count(1) as counts,max(xx_hvr_last_upd_tms) xx_hvr_last_upd_tms, current_date as sod_processed_date from analytics_view.xx_fnd_responsibility_v&#13;&#10;group by source_system_name,table_name&#13;&#10;union&#13;&#10;select distinct source_system_name,'xx_fnd_user' as table_name,count(1) as counts ,max(xx_hvr_last_upd_tms) xx_hvr_last_upd_tms, current_date as sod_processed_date from analytics_view.xx_fnd_user_v&#13;&#10;group by source_system_name,table_name&#13;&#10;union&#13;&#10;select distinct source_system_name,'xx_fnd_user_responsibility' as table_name,count(1) as counts,max(xx_hvr_last_upd_tms), current_date as sod_processed_date  from analytics_view.xx_fnd_user_responsibility_v&#13;&#10;group by source_system_name,table_name&#13;&#10;) a&#13;&#10;Where source_system_name in (select distinct source_system_cd from gf_sod_rpt.sod_app_defect) &#13;&#10;ORDER BY table_name,xx_hvr_last_upd_tms desc&#13;&#10;;commit;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="Insert Count Details per Source System"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tGreenplumRow_2"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_5" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_5" target="tGreenplumRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tGreenplumConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumConnection_2" offsetLabelX="0" offsetLabelY="0" source="tGreenplumConnection_2" target="tGreenplumRow_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_1" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_1" target="tGreenplumCommit_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tGreenplumRow_2" offsetLabelX="0" offsetLabelY="0" source="tGreenplumRow_2" target="tGreenplumRow_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Email_Notifications_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumCommit_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumConnection_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGreenplumRow_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fc500bce-0e72-4bf7-8346-5ef3f3f8d9de"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5DPUccTAq33+2PGiBlm7vQNMEfBJQtBF3IoBxkYWlUM9sQL9FjVN3UW3LDsAjQeesvPlwdHtRHYh
+eKi6hlGZLg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bf0c24ea-1948-418d-bd02-cc89fc050872"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oXIgJNcARcBfLr16+EVJBPQSpd6HYpITVGDvrPAssopXknJl+MN1tqyhidn4oINTEyjaBCv1FA2S
+PnqDh0iCWQ==</DigestValue></Reference></SignedInfo><SignatureValue>UiXtychmQ0VGwC7tSJx1cFZhu6JUgS8R0YqROon2PeoVvnxcmKxSTy8kvtw/tMAHDphGGZdYYpSr
+hNOxbN39kfZkPZbktvcPywbcvoFLIa6YQR/b8gJZbmIECnACZsvqtwkeef2t0etW/VR6jSblUeMI
+k1nhxU+RTlCN1zPlkyFZFxQTP7kzBUqruJ2FUo//WYpxOIThMlUrvQz8p1zcQyTzi9SH1T56A6eS
+4aetMwt3q+in5DV5/HB0iBEgFkUdBySUxJ+3AZPwpIlqu/olV0ZVq/TVn/7tLqNyhyV6spKG4yJA
+VNNp0chF+ylmacRN4EGMbxc7JgIvvM2lBFzkFg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bf0c24ea-1948-418d-bd02-cc89fc050872" Target="#_fc500bce-0e72-4bf7-8346-5ef3f3f8d9de"><Timestamp>2021-01-06 13:14:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
